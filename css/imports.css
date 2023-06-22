@@ -1,0 +1,13 @@
+@import 'reset.css';
+@import 'global.css';
+@import './header/header.css';
+@import './header/navbar.css';
+@import './header/menu.css';
+@import './header/burger.css';
+@import './hero/hero.css';
+@import './numbers/numbers.css';
+@import './results/results.css';
+@import './video-section/video-section.css';
+@import './help/help.css';
+@import './news/news.css';
+@import './footer/footer.css';

@@ -1,0 +1,60 @@
+.header__icon {
+  margin-left: auto;
+  margin-right: 24px;
+  position: relative;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.header__icon:hover {
+  transform: scale(1.04);
+}
+
+.header__icon-counter {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  background-color: var(--orange);
+  color: #fff;
+  padding: 3px 5px;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+}
+
+.header__btn {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 16px 24px;
+  color: var(--black);
+  background-color: var(--orange);
+}
+
+@media screen and (max-width: 900px) {
+  .header__btn {
+    display: none;
+    transition: all 0.3s;
+  }
+
+  .header__btn.burger-active {
+    position: fixed;
+    display: block;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+  }
+
+  .header__icon-counter {
+    width: 20px;
+    height: 20px;
+    margin-top: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo a img {
+    max-width: 70%;
+  }
+}

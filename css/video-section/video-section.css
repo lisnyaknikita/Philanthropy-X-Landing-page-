@@ -1,0 +1,130 @@
+.video-section {
+  padding: 198px 0;
+  background-color: #ffd4a4;
+}
+
+.video-section__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-section__sign {
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.video-section__title {
+  max-width: 752px;
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.video-section__btns {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.video-section__btn--black {
+  background-color: var(--black);
+  color: #fff;
+}
+
+.video-section__btn--black:hover {
+  background-color: #242424;
+}
+
+.video-section__btn--white {
+  margin-left: 28px;
+  background-color: #fff;
+}
+
+.video-section__btn--white:hover {
+  background-color: #d8d2d2;
+}
+
+.video-section__poster {
+  margin-bottom: 80px;
+}
+
+.video-section__description {
+  display: flex;
+}
+
+.video-section__description div + div {
+  margin-left: 74px;
+}
+
+.video-section__description-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  max-width: 570px;
+  color: var(--black);
+}
+
+.video-section__description-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--grey);
+  max-width: 575px;
+}
+
+@media screen and (max-width: 1024px) {
+  .video-section {
+    padding: 80px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video-section__btns {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .video-section__poster {
+    margin-bottom: 40px;
+  }
+
+  .video-section__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video-section__description div + div {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .video-section__description-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .video-section__description-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video-section {
+    padding: 40px 0;
+  }
+
+  .video-section__title {
+    margin-bottom: 15px;
+  }
+
+  .video-section__btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-section__btn--white {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}

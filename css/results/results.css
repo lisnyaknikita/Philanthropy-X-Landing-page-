@@ -1,0 +1,142 @@
+.results {
+  margin-bottom: 200px;
+}
+
+.results__inner {
+  display: flex;
+  align-items: center;
+}
+
+.results__content {
+  margin-right: 116px;
+}
+
+.results__sign {
+  color: var(--orange);
+  margin-bottom: 25px;
+}
+
+.results__content-title {
+  max-width: 449px;
+  margin-bottom: 25px;
+}
+
+.results__items {
+  max-width: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 72px;
+}
+
+.results__item {
+  display: flex;
+  align-items: center;
+}
+
+.results__item:nth-child(2),
+.results__item:nth-child(4) {
+  margin-left: auto;
+}
+
+.results__item:nth-child(1),
+.results__item:nth-child(2) {
+  margin-bottom: 28px;
+}
+
+.results__item-img {
+  margin-right: 16px;
+}
+
+.results__item-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 44px;
+  color: var(--black);
+  margin-bottom: 9px;
+}
+
+.results__item-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--grey);
+}
+
+.results__btn {
+  background-color: var(--orange);
+}
+
+@media screen and (max-width: 1200px) {
+  .results__content {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .results {
+    margin-bottom: 100px;
+  }
+
+  .results__items {
+    max-width: 360px;
+    margin-bottom: 50px;
+  }
+
+  .results__item:nth-child(2),
+  .results__item:nth-child(4) {
+    margin-left: 0;
+  }
+
+  .results__item:nth-child(1),
+  .results__item:nth-child(2) {
+    margin-bottom: 0px;
+  }
+
+  .results__item + .results__item {
+    margin-top: 15px;
+  }
+
+  .results__item-img {
+    margin-right: 10px;
+  }
+
+  .results__item-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .results__item-description {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .results {
+    margin-bottom: 40px;
+  }
+
+  .results__content {
+    margin-right: 0;
+  }
+
+  .results__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .results__items {
+    max-width: 200px;
+    margin: 0 auto 30px auto;
+  }
+
+  .results__img {
+    margin-top: 30px;
+  }
+
+  .results__img img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
